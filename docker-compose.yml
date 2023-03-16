@@ -4,7 +4,7 @@ services:
   web:
     build: .
     ports:
-      - 8080:8080
+      - 8000:8080
     env_file:
       - ./.env.dev
     command: gunicorn openapi_server.__main__:app
